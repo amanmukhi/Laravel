@@ -83,7 +83,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Full Name" value="{{ $donor->name }}">
+                                    <input type="text" name="name" class="form-control" placeholder="Full Name" value="">
                                     <!-- @error('name')
                                     <div class="error">{{ $message }}</div>
                                     @enderror -->
@@ -91,7 +91,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" value="{{ $donor->email }}">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" value="">
                                     <!-- @error('email')
                                     <div class="error">{{ $message }}</div>
                                     @enderror -->
@@ -180,25 +180,16 @@
                                                 <div class="select-style">
                                                     <select class="form-control" name="blood_group" style=" margin-bottom: 0px ;">
 
-                                                        @if($donor->blood_group == 'O_p')
-                                                        <option value="O_p" selected>O+</option>
-                                                        @elseif($donor->blood_group == 'O_n')
-                                                        <option value="O_n" selected>O-</option>
-                                                        @elseif($donor->blood_group == 'A_p')
-                                                        <option value="A_p" selected>A+</option>
-                                                        @elseif($donor->blood_group == 'A_n')
-                                                        <option value="A_n" selected>A-</option>
-                                                        @elseif($donor->blood_group == 'B_p')
-                                                        <option value="B_p" selected>B+</option>
-                                                        @elseif($donor->blood_group == 'B_n')
-                                                        <option value="B_n" selected>B-</option>
-                                                        @elseif($donor->blood_group == 'AB_p')
-                                                        <option value="AB_p" selected>AB+</option>
-                                                        @elseif($donor->blood_group == 'AB_n')
-                                                        <option value="AB_n" selected>AB-</option>
-                                                        @else
-                                                        <option value="" selected>No one Selected</option>
-                                                        @endif
+                                                        <option value="">Select</option>
+                                                        <option value="O_p">O+</option>
+                                                        <option value="O_n">O-</option>
+                                                        <option value="A_p">A+</option>
+                                                        <option value="A_n">A-</option>
+                                                        <option value="B_p">B+</option>
+                                                        <option value="B_n">B-</option>
+                                                        <option value="AB_p">AB+</option>
+                                                        <option value="AB_n">AB-</option>
+
 
                                                     </select>
                                                     <!-- @error('blood_group')
@@ -208,7 +199,7 @@
                                             </div>
 
                                             <div class="form-group col-md-6">
-                                                <input type="text" name="unit" class="form-control" placeholder="Unit(in ml)" value="{{ $donor->unit }}">
+                                                <input type="text" name="unit" class="form-control" placeholder="Unit(in ml)" value="">
                                                 <!-- @error('unit')
                                                 <div class="error">{{ $message }}</div>
                                                 @enderror -->
@@ -220,7 +211,7 @@
                                                 State :
                                                 <select name="state" class="custom-select form-control" style="width: 100%;">
                                                     <option value="">Select</option>
-                                                    <option value="OD" selected>Odisha</option>
+                                                    <option value="OD">Odisha</option>
                                                     <!-- @error('state')
                                                     <div class="error">{{ $message }}</div>
                                                     @enderror -->
@@ -229,17 +220,12 @@
                                             <div class="col-md-6">
                                                 City :
                                                 <select name="city" class="custom-select form-control" style="width: 100%;">
-                                                    @if($donor->city == 'Cuttack')
-                                                    <option value="Cuttack" selected>Cuttack</option>
-                                                    @elseif($donor->city == 'Khurda')
-                                                    <option value="Khurda" selected>Khurda</option>
-                                                    @elseif($donor->city == 'Berhamapur')
-                                                    <option value="Berhamapur" selected>Berhamapur</option>
-                                                    @elseif($donor->city == 'Bhubaneswar')
-                                                    <option value="Bhubaneswar" selected>Bhubaneswar</option>
-                                                    @else
-                                                    <option value="" selected>No one Selected</option>
-                                                    @endif
+                                                    <option value="">Select</option>
+                                                    <option value="Cuttack">Cuttack</option>
+                                                    <option value="Khurda">Khurda</option>
+                                                    <option value="Berhamapur">Berhamapur</option>
+                                                    <option value="Bhubaneswar">Bhubaneswar</option>
+
 
                                                 </select>
                                                 <!-- @error('city')

@@ -83,6 +83,7 @@ class donorController extends Controller
     public function donor_registration_action(Request $request)
     {
 
+        // dd(Donor::all());
         // dd($request->all());
 
         // validation

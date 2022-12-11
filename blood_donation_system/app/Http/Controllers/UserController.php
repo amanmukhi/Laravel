@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Donor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -11,7 +12,6 @@ class UserController extends Controller
 {
     public function index($blood_group)
     {
-
         return redirect('/user-login')->with('blood_group', $blood_group);
     }
 
@@ -51,8 +51,12 @@ class UserController extends Controller
     }
     public function dashboard()
     {
-        $user_data = User::Find(session('user_id'));
-        return view('frontend.user-dashboard')->with('user', $user_data);
+        $user = User::Find(session('user_id'));
+        $donor = Donor::all();
+
+        // dd($donor);
+
+        return view('frontend.user-dashboard', compact('donor', 'user'));
     }
 
     public function user_register()

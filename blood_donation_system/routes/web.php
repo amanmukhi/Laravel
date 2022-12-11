@@ -90,7 +90,7 @@ Route::middleware(['admin_auth'])->group(function () {
 // login Page - Admin Panel
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/login', [AdminController::class, 'login']);
-    // Route::get('/register', [AdminController::class, 'register']);
+    Route::get('/register', [AdminController::class, 'register']);
 });
 
 // ----------------------------end-------------------------------
@@ -98,7 +98,7 @@ Route::group(['prefix' => 'admin'], function () {
 // register - Admin Panel
 Route::group(['prefix' => 'admin'], function () {
     Route::post('/login', [AdminController::class, 'login_user']);
-    // Route::post('/register', [AdminController::class, 'register_user']);
+    Route::post('/register', [AdminController::class, 'register_user']);
 });
 
 

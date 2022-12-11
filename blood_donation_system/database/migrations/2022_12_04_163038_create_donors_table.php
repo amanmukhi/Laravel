@@ -28,6 +28,7 @@ return new class extends Migration
             $table->string('state', 50)->nullable();
             $table->string('city', 50)->nullable();
             $table->enum('t_c', ['0', '1'])->nullable();
+            $table->enum('status', ['0', '1'])->nullable();
             $table->timestamps();
         });
     }

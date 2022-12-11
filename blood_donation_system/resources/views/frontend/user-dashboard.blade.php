@@ -43,18 +43,89 @@
             <div class="card add-style">
 
                 <div class="card-body">
-                    <h5 class="card-title">Request for Blood Group : O+</h5>
+
+                    <h5 class="card-title">Progress bar</h5>
+                    @php
+                    $barValue = 0;
+                    @endphp
                     <!-- Red -->
                     <div class="progress">
-                        <div class="progress-bar bg-danger" style="background-color: #fe3c47; width: 20%;">20%</div>
+                        <div class="progress-bar bg-danger" id="progressbar" style="background-color: #fe3c47; width: 20%;">20%</div>
                     </div>
-                    <a href="#" class="btn btn-primary" style="background-color :#fe3c47; border:none;">Donate Now</a>
+
+
+
+                    <!-- <a href="#" class="btn btn-primary" style="background-color: #fe3c47;">Send Request</a> -->
+
+                    <hr>
+
+                    <h3>Donor List</h3>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <span>Sl No. :</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span>Name :</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>Blood Group :</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>Unit :</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>Send Request</span>
+                        </div>
+                    </div>
+                    @php
+                    $i=1;
+                    @endphp
+
+                    @foreach($donor as $row)
+
+                    <div class="row">
+                        <div style="margin-top: 20px;"></div>
+                        <div class="col-md-2">
+                            <h5 class="card-title">{{ $i++ }}</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>{{ $row->name }}</h5>
+                        </div>
+                        <div class="col-md-2">
+
+                            <h5>O+</h5>
+                        </div>
+                        <div class="col-md-2">
+
+                            <h5>{{ $row->unit }}</h5>
+                        </div>
+                        <div class="col-md-2">
+                            <button id="{{$row->id}}" class="btn btn-primary" style="background-color :#fe3c47; border:none;">Send Request</button>
+                        </div>
+                    </div>
+                    <!-- <script>
+                        $('#{{$row->id}}').on('click', function() {
+                            // alert(this.id);
+                            var id = this.id;
+                            $.ajax({
+                                method:"POST",
+                                url:"",
+                                
+                            });
+                        })
+                    </script> -->
+
+
+
+                    @endforeach
                 </div>
 
             </div>
             <div style="margin-bottom: 20px;"></div>
 
         </div>
+
+
     </div>
 
 

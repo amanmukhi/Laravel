@@ -65,8 +65,6 @@
             <div class="card-text">
                 <form method="post" action="{{ url('/user-login') }}">
                     @csrf
-
-                    <input type="hidden" name="blood_group" value="{{ $blood_group }}">
                     <div class="form-group">
                         <label>Email address</label>
                         <input type="email" name="email" class="form-control form-control-sm">

@@ -94,7 +94,7 @@ class AdminController extends Controller
         $insert->email = $request->admin_email;
         $insert->password =  $password;
         $insert->save();
-        return redirect('admin.frontend.login');
+        return redirect('/admin/login');
     }
 
     //=====================================================================

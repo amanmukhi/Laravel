@@ -86,9 +86,9 @@
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Log in</button>
 
-                    <!-- <div class="sign-up">
-                        Don't have an account? <a href="{{ url('/Donor-register') }}">Register</a>
-                    </div> -->
+                    <div class="sign-up">
+                        Don't have an account? <a href="{{ url('/register') }}">Register</a>
+                    </div>
                 </form>
             </div>
         </div>

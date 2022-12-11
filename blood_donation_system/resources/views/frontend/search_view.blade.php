@@ -194,8 +194,6 @@
                         $i=1;
                         @endphp
 
-
-
                         @foreach($result as $row)
                         <div class="row">
                             <div style="margin-top: 20px;"></div>

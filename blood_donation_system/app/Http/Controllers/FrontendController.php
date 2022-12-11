@@ -63,8 +63,7 @@ class FrontendController extends Controller
     {
         // dd($request->all());
         $result = Donor::where('blood_gr', $request->group)->get();
-        session(['blood_group', $result[0]->blood_gr]);
-
+        session()->put('blood_group', $result[0]->blood_gr);
 
         // dd($result);
         return view('frontend.search_view', compact('result'));
