@@ -107,7 +107,7 @@
                         $('#{{$row->id}}').on('click', function() {
                             // alert(this.id);
                             var id = this.id;
-                            $.ajax({
+                            $.ajax({  
                                 method:"POST",
                                 url:"",
                                 

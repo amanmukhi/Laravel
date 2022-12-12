@@ -64,7 +64,6 @@
 
 @section('main-section')
 
-
 <section class="contact-from pt-4">
     <div class="container">
         <div class="row mt-5">
@@ -75,11 +74,8 @@
                             <h4>Registration form</h4>
                         </div>
                     </div>
-
-
                     <form method="post" action="{{ url('/register') }}">
                         @csrf
-
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -160,8 +156,6 @@
 
                                 </div>
                             </div>
-
-
                             <!-- Address -->
                             <div class="row">
                                 <div class="col-md-12">
@@ -189,8 +183,6 @@
                                                         <option value="B_n">B-</option>
                                                         <option value="AB_p">AB+</option>
                                                         <option value="AB_n">AB-</option>
-
-
                                                     </select>
                                                     <!-- @error('blood_group')
                                                     <div class="error">{{ $message }}</div>
@@ -225,8 +217,6 @@
                                                     <option value="Khurda">Khurda</option>
                                                     <option value="Berhamapur">Berhamapur</option>
                                                     <option value="Bhubaneswar">Bhubaneswar</option>
-
-
                                                 </select>
                                                 <!-- @error('city')
                                                 <div class="error">{{ $message }}</div>
@@ -236,9 +226,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
                             <div class="form-group col-md-12">
                                 <div style="margin-top: 20px;"></div>
                                 <input type="checkbox" id="teamcondition" style="margin-bottom: 7px; margin-right: 6px;" name="teamcondition" value="1"><span style="font-size: 15px;">Our Team and condition</span>
@@ -251,10 +238,8 @@
                 </div>
             </div>
         </div>
-
     </div>
 </section>
-
 <script>
     $(function() {
         $("#teamcondition").on("click", function() {
@@ -262,7 +247,6 @@
         });
     });
 </script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 @endsection

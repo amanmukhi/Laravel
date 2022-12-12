@@ -9,6 +9,22 @@ use Symfony\Contracts\Service\Attribute\Required;
 
 class donorController extends Controller
 {
+
+    // ====================== API ===========================
+
+    public function view_donor()
+    {
+        return Donor::all();
+    }
+    public function view_single_donor($id)
+    {
+
+        return Donor::where('id', $id)->first();
+    }
+
+    // =======================================================
+
+
     public function donor()
     {
         if (session('donor_id')) {
