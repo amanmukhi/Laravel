@@ -103,5 +103,5 @@ Route::group(['prefix' => 'admin'], function () {
 
 // ----------------------------end-------------------------------
 
-
+// logout - Admin Panel
 Route::get('/logout', [AdminController::class, 'logout']);
