@@ -9,13 +9,15 @@
   -o-transform: rotate(45deg);
   -moz-transform: rotate(45deg); }
 
-/*!
+/*
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+
+
+ :root {
   --blue: #5f76e8;
   --indigo: #6610f2;
   --purple: #5f76e8;
@@ -7652,7 +7654,7 @@ a.text-purple:hover, a.text-purple:focus {
     #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .sidebar-nav ul .list-divider {
       margin: 10px; }
     #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .sidebar-nav ul .sidebar-item .sidebar-link {
-      padding: 12px 15px;
+      padding: 10px 15px;
       margin-right: 0; }
       #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .sidebar-nav ul .sidebar-item .sidebar-link .feather-icon,
       #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .sidebar-nav ul .sidebar-item .sidebar-link i {
@@ -7937,7 +7939,7 @@ sidebar navigation
       .sidebar-nav #sidebarnav .sidebar-item .sidebar-link {
         color: #fff;
         font-size: 16px;
-        padding: 12px 30px;
+        padding: 10px 30px;
         display: flex;
         white-space: nowrap;
         align-items: center;
@@ -7963,7 +7965,7 @@ sidebar navigation
         border-radius: 0px 60px 60px 0px;
         color: #fff !important;
         background: linear-gradient(to right, #8971ea, #7f72ea, #7574ea, #6a75e9, #5f76e8);
-        box-shadow: 0px 7px 12px 0px rgba(95, 118, 232, 0.21);
+        box-shadow: 0px 7px 10px 0px rgba(95, 118, 232, 0.21);
         opacity: 1; }
         .sidebar-nav #sidebarnav .sidebar-item.selected > .sidebar-link .feather-icon,
         .sidebar-nav #sidebarnav .sidebar-item.selected > .sidebar-link i {
@@ -7973,7 +7975,7 @@ sidebar navigation
       .sidebar-nav #sidebarnav .sidebar-item .first-level {
         padding: 0 0 10px 0; }
         .sidebar-nav #sidebarnav .sidebar-item .first-level .nav-small-cap {
-          font-size: 12px;
+          font-size: 10px;
           font-weight: 500; }
         .sidebar-nav #sidebarnav .sidebar-item .first-level .sidebar-item.active .sidebar-link {
           position: relative; }
@@ -7982,7 +7984,7 @@ sidebar navigation
             display: block;
             background: rgba(0, 0, 0, 0.1);
             height: 1px;
-            width: 12px;
+            width: 10px;
             position: absolute;
             left: 0;
             top: 23px; }
@@ -7992,12 +7994,12 @@ sidebar navigation
         .sidebar-nav #sidebarnav .sidebar-item .first-level .sidebar-item.active + .base-level-line {
           display: block; }
         .sidebar-nav #sidebarnav .sidebar-item .first-level .sidebar-item .sidebar-link {
-          padding: 12px 15px; }
+          padding: 10px 15px; }
           .sidebar-nav #sidebarnav .sidebar-item .first-level .sidebar-item .sidebar-link i {
             font-size: 20px;
             line-height: 20px; }
     .sidebar-nav #sidebarnav .nav-small-cap {
-      font-size: 12px;
+      font-size: 10px;
       padding: 0 30px;
       white-space: nowrap;
       display: flex;
@@ -8211,9 +8213,9 @@ Table Cell
 
 .btn-list {
   margin-left: -8px;
-  margin-bottom: -12px; }
+  margin-bottom: -10px; }
   .btn-list .btn {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     margin-left: 8px; }
 
 * {
@@ -8264,7 +8266,7 @@ html body .font-10 {
   font-size: 10px; }
 
 html body .font-12 {
-  font-size: 12px; }
+  font-size: 10px; }
 
 html body .font-14 {
   font-size: 14px; }
@@ -8390,7 +8392,7 @@ strong {
   height: 8px; }
 
 .progress-lg {
-  height: 12px; }
+  height: 10px; }
 
 .progress-xl {
   height: 15px; }
@@ -8964,7 +8966,7 @@ strong {
   box-shadow: none;
   border-radius: 3px;
   margin: 0 3px;
-  padding: 6px 12px;
+  padding: 6px 10px;
   height: auto; }
 
 .fc-text-arrow {
